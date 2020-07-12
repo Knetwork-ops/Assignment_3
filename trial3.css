@@ -1,0 +1,23 @@
+.error
+{
+    color: white;
+    background-color: rgb(247, 23, 23);
+    margin-left: 12px;
+    border-radius: 3px;
+}
+.dsNone
+{
+    display:none;
+}
+.success
+{
+    color: white;
+    background-color: green;
+    margin-left: 12px;
+    border-radius: 3px;
+}
+.algContent
+{
+    width:700px; margin:0 auto;
+}
+

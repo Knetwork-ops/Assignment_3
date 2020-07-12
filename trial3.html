@@ -1,0 +1,138 @@
+<html>
+    <title>Assignment3(Js)</title>
+<body>
+    <script type="text/javascript" src="trial3.js">
+    var T=0
+    </script>
+    <link rel="stylesheet" type="text/css" href="trial3.css">
+
+    <table width="1300" height="625" border="1">
+   <tr>
+   <td>
+    <div class="wrapper">
+        <form>              
+         <input type="number" name="time" id="time" placeholder="Enter time in ms ">
+         <input type="button" name="Submit" id="Submit" value="Submit" onclick="Submit()">
+         </form>            
+        </div>
+   </td>
+       <td> 
+<head>
+    <style>
+
+    .slides-inner {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        transform: translate3d(0,0,0);
+        transition: 1000ms;
+    }
+    .slide-show {
+        overflow:hidden;
+        position:relative;
+    }
+    #slides{
+        border: 2px solid red;
+        width: 300px;
+        height: 120px;
+
+        margin-left: 600px;
+    }
+    
+    </style>
+</head>
+<body>
+    <div id="slides" class="slide-show">
+        <!-- Define the Slide Show Elements -->
+        <div class="slides-inner">
+          <img src="images/bee-1200-400.jpg" width="300" height="120" alt="bee">
+          <img src="images/beetle-1200-400.jpg" width="300" height="120" alt="beetle">
+          <img src="images/dandelion-1200-400.jpg" width="300" height="120" alt="dandelion">
+          <img src="images/ladybug-1200-400.jpg" width="300" height="120" alt="ladybug">
+          <img src="images/beetle-1200-400.jpg" width="300" height="120" alt="beetle">
+          <img src="images/dandelion-1200-400.jpg" width="300" height="120" alt="dandelion">
+          <img src="images/bee-1200-400.jpg" width="300" height="120" alt="bee">
+          <img src="images/beetle-1200-400.jpg" width="300" height="120" alt="beetle">
+          <img src="images/dandelion-1200-400.jpg" width="300" height="120" alt="dandelion">
+          <img src="images/ladybug-1200-400.jpg" width="300" height="120" alt="ladybug">
+          
+
+        </div>
+    </div>
+    <script>
+      function makeSlideshow(slidesId) {
+      const slides = document.getElementById(slidesId)
+      const slidesInner = slides.querySelector('.slides-inner')
+      const images = slidesInner.querySelectorAll('img')
+
+      let index = 0
+      setInterval(function() {
+        index += 1
+        if (index === images.length) {
+            index = 0
+        }
+        slidesInner.style.transform = `translate3d(${index * -300}px,0,0)`
+      },4000)
+      }
+
+      makeSlideshow('slides')
+    </script>
+</body>
+
+   </td>
+    </tr> 
+
+    <tr>
+        <td colspan="2">
+
+
+
+            
+    <div class="wrapper">
+    <form>  
+     <input type="text" name="firstName" id="firstName" placeholder="Enter First Number">
+     <input type="text" name="secondName" id="secondName" placeholder="Enter First Number">
+     <input type="text" name="result" id="result" placeholder="result">
+     <input type="button" name="Add" id="addbtn" value="Sub" onclick="sub()">
+     <input type="button" name="Add" id="addbtn" value="Add" onclick="add()">
+     <input type="button" name="Add" id="addbtn" value="Multiply" onclick="multiply()">
+     <input type="button" name="Add" id="addbtn" value="Division" onclick="division()">
+     </form>            
+    </div>
+        </td>
+    </tr> 
+
+    <tr>
+        <td colspan="2">
+            
+            <body>
+                <form id="form1" runat="server">
+                <div class="algContent">
+                    Email Validation In JavaScript
+                </div>
+                <br >
+                <br >
+                <br >
+                <div class="algContent">
+                    <div style="float:left;">
+                        <span>Enter the Email:</span> <span>
+                            <input id="txtEmail" type="text" />
+                        </span>
+                    </div>
+                    <div style="float:left;">
+                    <span style="float:left;" id="errorMsg" class="dsNone error"></span><span style="float:left;" id="successMsg" class="dsNone success">
+                    </span>
+                    </div>
+                    <br ><br >
+                    <input type="button" value="Submit" onclick="validateEmail();">
+                </div>
+                </form>
+            </body>
+            
+        </td>
+        
+    </tr>
+    </table>    
+</body>
+
+
